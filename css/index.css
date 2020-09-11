@@ -52,7 +52,7 @@ a:hover {
 img {	
     height:39rem;	
     object-fit: cover;	
-    display: block;	
+    display: flex;	
     margin: 2%;	
     margin-top: 4%;	
     margin-left: auto;	
@@ -128,9 +128,27 @@ button:hover{
 }
 
 .artist{
-    width:40%;
+    width:100%;
     text-align:center;
 }
 .artist img{
-    width:100%;
+    display:flex;
+    width: 80%;
+}
+
+@media screen and (max-width: 500px) {
+    .artists-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        
+
+    }
+
+    .artist img{
+        display:flex;
+        width:
+    }
 }
